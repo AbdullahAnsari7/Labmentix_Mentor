@@ -596,7 +596,7 @@ export default function SessionPage() {
         throw new Error("NEXT_PUBLIC_API_URL is not configured");
       }
 
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/run`, {
+      const res = await fetch(`${apiUrl}/api/run`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
